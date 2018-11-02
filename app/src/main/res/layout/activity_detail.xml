@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_home_team_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Manchester United"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textsize_home_detail" />
+
+            <TextView
+                android:id="@+id/tv_home_score_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/textsize_score_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lineup_defense"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_home_lineup_defense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="daftar pemain" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_lineup"
+                android:gravity="center"
+                android:text="@string/lineup_midfield"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_home_lineup_midfield"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="daftar pemain" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_lineup"
+                android:text="@string/lineup_midfield"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_home_lineup_forward"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="daftar pemain" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_away_team_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Manchester United"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textsize_home_detail" />
+
+            <TextView
+                android:id="@+id/tv_away_score_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/textsize_score_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lineup_defense"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_away_lineup_defense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="daftar pemain" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_lineup"
+                android:text="@string/lineup_midfield"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_away_lineup_midfield"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="daftar pemain" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintop_lineup"
+                android:text="@string/lineup_midfield"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_away_lineup_forward"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="daftar pemain" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
