@@ -16,4 +16,5 @@
     <dimen name="textsize_score_detail">40sp</dimen>
     <dimen name="margintop_lineup">8dp</dimen>
     <dimen name="margin_text">16dp</dimen>
+    <dimen name="textsize_splash">25sp</dimen>
 </resources>
