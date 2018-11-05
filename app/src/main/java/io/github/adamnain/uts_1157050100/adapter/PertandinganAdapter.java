@@ -41,7 +41,7 @@ public class PertandinganAdapter extends RecyclerView.Adapter<PertandinganAdapte
         holder.tvHomeTeam.setText(event.getStrHomeTeam());
         holder.tvHomeScore.setText(""+event.getIntHomeScore());
         holder.tvAwayTeam.setText(event.getStrAwayTeam());
-        holder.tvAwayScore.setText(""+event.getIntHomeScore());
+        holder.tvAwayScore.setText(""+event.getIntAwayScore());
     }
 
     @Override
@@ -76,14 +76,14 @@ public class PertandinganAdapter extends RecyclerView.Adapter<PertandinganAdapte
 
             Intent i = new Intent(context, DetailActivity.class);
             i.putExtra("homeTeam", event.getStrHomeTeam());
-            i.putExtra("homeScore", event.getIntHomeScore());
+            i.putExtra("homeScore", String.valueOf(event.getIntHomeScore()));
             i.putExtra("homeGoalkeeper", event.getStrHomeLineupGoalkeeper());
             i.putExtra("homeDefense", event.getStrHomeLineupDefense());
             i.putExtra("homeMidfield", event.getStrHomeLineupMidfield());
             i.putExtra("homeForward", event.getStrHomeLineupForward());
 
             i.putExtra("awayTeam", event.getStrAwayTeam());
-            i.putExtra("awayScore", event.getIntAwayScore());
+            i.putExtra("awayScore", String.valueOf(event.getIntAwayScore()));
             i.putExtra("awayGoalkeeper", event.getStrAwayLineupGoalkeeper());
             i.putExtra("awayDefense", event.getStrAwayLineupDefense());
             i.putExtra("awayMidfield", event.getStrAwayLineupMidfield());

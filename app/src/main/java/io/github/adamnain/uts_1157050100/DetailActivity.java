@@ -69,13 +69,13 @@ public class DetailActivity extends AppCompatActivity {
 
     private void getIntentData(){
         homeTeam = getIntent().getStringExtra("homeTeam");
-        homeScore = ""+ getIntent().getIntExtra("homeScore",0);
+        homeScore = getIntent().getStringExtra("homeScore");
         homeGoalkeeper = getIntent().getStringExtra("homeGoalkeeper");
         homeDefense = getIntent().getStringExtra("homeDefense");
         homeMidfield = getIntent().getStringExtra("homeMidfield");
         homeForward = getIntent().getStringExtra("homeForward");
         awayTeam = getIntent().getStringExtra("awayTeam");
-        awayScore = ""+ getIntent().getIntExtra("awayScore",0);
+        awayScore = getIntent().getStringExtra("awayScore");
         awayGoalkeeper = getIntent().getStringExtra("awayGoalkeeper");
         awayDefense = getIntent().getStringExtra("awayDefense");
         awayMidfield = getIntent().getStringExtra("awayMidfield");
